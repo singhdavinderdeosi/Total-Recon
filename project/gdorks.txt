@@ -1,0 +1,18 @@
+intitle:index.of
+ext:xml | ext:conf | ext:cnf | ext:reg | ext:inf | ext:rdp | ext:cfg | ext:txt | ext:ora | ext:ini
+ext:sql | ext:dbf | ext:mdb
+inurl:wp- | inurl:wp-content | inurl:plugins | inurl:uploads | inurl:themes | inurl:download
+ext:log
+ext:bkf | ext:bkp | ext:bak | ext:old | ext:backup
+inurl:login
+intext:"sql syntax near" | intext:"syntax error has occurred" | intext:"incorrect syntax near" | intext:"unexpected end of SQL command" | intext:"Warning: mysql_connect()" | intext:"Warning: mysql_query()" | intext:"Warning: pg_connect()"
+ext:doc | ext:docx | ext:odt | ext:pdf | ext:rtf | ext:sxw | ext:psw | ext:ppt | ext:pptx | ext:pps | ext:csv
+ext:php intitle:phpinfo "published by the PHP Group"
+inurl:shell | inurl:backdoor | inurl:wso | inurl:cmd | shadow | passwd | boot.ini | inurl:backdoor
+inurl:readme | inurl:license | inurl:install | inurl:setup | inurl:config
+inurl:redir | inurl:url | inurl:redirect | inurl:return | inurl:src=http | inurl:r=http
+ext:action | ext:struts | ext:do
+employees 
+inurl:"/phpinfo.php" | inurl:".htaccess" | inurl:"/.git"
+inurl:wp-content | inurl:wp-includes
+ext:swf
