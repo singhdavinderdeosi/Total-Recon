@@ -11,7 +11,7 @@ from termcolor import colored
 def show_banner():
     figlet = pyfiglet.figlet_format("Total Recon", font="slant")
     print(figlet)
-    print("instagram - @davinder_singh_deosi                                                                   @VIEH GROUP\n")
+    print("instagram - @davinder_singh_deosi                                                                   n")
     print("WELCOME TO TOTAL RECON")
 
 # Function to check HTTP status code
