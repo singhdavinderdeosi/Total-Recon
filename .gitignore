@@ -1,0 +1,4 @@
+﻿__pycache__/
+*.pyc
+.google-cookie
+*.log
