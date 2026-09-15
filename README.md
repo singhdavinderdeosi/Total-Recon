@@ -1,25 +1,25 @@
-# Total-Recon
+# Total-Recon — Tested Responsive Popup Build
 
-A Python/Tkinter reconnaissance toolkit for cybersecurity and penetration-testing
-workflows. Provides five recon modules through a simple desktop GUI:
+This build keeps the five Total-Recon options and adds responsive popup behavior.
 
-- **HTTP status checker** — verify target availability and response codes
-- **Subdomain brute-forcer** — discover subdomains against a target domain
-- **Directory brute-forcer** — enumerate hidden paths/directories on a target
-- **Automated Google dorking** — run predefined dork queries against a target
-- **JWT brute-forcer** — attempt to crack weak JWT signing secrets
+## Popup behavior
+- Short messages stay compact.
+- Long scan results automatically become scrollable.
+- Dialog dimensions are capped to the current screen size.
+- Dialogs open centered over the main application.
+- Popups can be resized where useful.
+- Escape/Enter close result/status dialogs.
 
-## Tech stack
-Python, Tkinter, `requests`, `pyfiglet`, `PyJWT`, `googlesearch-python`, `termcolor`
+## Recommended environment
+Python 3.10 with a virtual environment.
 
-## Installation
-```bash
-git clone https://github.com/singhdavinderdeosi/Total-Recon.git
-cd Total-Recon/project
+```powershell
+cd "E:\My_Projects\Total-Recon\project"
+py -3.10 -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 python main.py
 ```
 
-## Disclaimer
-For educational and authorized security-testing use only. Do not run against
-targets you don't own or have explicit permission to test.
+Only test systems and domains you own or are authorized to assess.
