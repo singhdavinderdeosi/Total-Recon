@@ -11,6 +11,7 @@ import requests
 from termcolor import colored
 
 BASE_DIR = Path(__file__).resolve().parent
+VERSION = "1.0.1"
 DEFAULT_SCAN_LIMIT = 500
 MAX_SCAN_LIMIT = 5000
 MAX_WORKERS = 10
@@ -97,7 +98,7 @@ def _show_popup(title, message, kind="info"):
             body_frame,
             wrap="word",
             yscrollcommand=scrollbar.set,
-            font=("Consolas", 10),
+            font="TkFixedFont",
             padx=10,
             pady=8,
             relief="solid",
@@ -205,7 +206,7 @@ def _probe_subdomain(host, requester=requests.get):
             timeout=(2, 3),
             allow_redirects=False,
             stream=True,
-            headers={"User-Agent": "Total-Recon/1.0"},
+            headers={"User-Agent": f"Total-Recon/{VERSION}"},
         )
         status = response.status_code
         close = getattr(response, "close", None)
@@ -240,7 +241,7 @@ def _probe_directory(url, requester=requests.get):
             timeout=(2, 3),
             allow_redirects=False,
             stream=True,
-            headers={"User-Agent": "Total-Recon/1.0"},
+            headers={"User-Agent": f"Total-Recon/{VERSION}"},
         )
         status = response.status_code
         close = getattr(response, "close", None)
@@ -460,7 +461,7 @@ def bruteforce_jwt():
 def build_app():
     global app
     app = tk.Tk()
-    app.title("Total Recon")
+    app.title(f"Total Recon v{VERSION}")
     app.resizable(True, False)
 
     tk.Label(app, text="Select an option to use:", font=("Helvetica", 12)).pack(pady=10)

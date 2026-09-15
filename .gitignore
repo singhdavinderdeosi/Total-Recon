@@ -1,15 +1,23 @@
-﻿__pycache__/
-*.pyc
-.google-cookie
-*.log
-.venv/
-project/.venv/
+# Python
 __pycache__/
 */__pycache__/
-*.pyc
-*.pyo
-*.log
-*.zip
-.DS_Store
+*.py[cod]
+
+# Virtual environments
+.venv/
+project/.venv/
+venv/
+
+# Test/cache output
 .pytest_cache/
 */.pytest_cache/
+.coverage
+htmlcov/
+
+# Local/runtime files
+.google-cookie
+*.log
+.DS_Store
+
+# Release archives
+*.zip
