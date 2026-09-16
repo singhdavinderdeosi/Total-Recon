@@ -113,3 +113,8 @@ The repository also contains `.github/workflows/cross-platform-tests.yml`, which
 ## Notes
 
 The legacy `pyfiglet` dependency may emit a `pkg_resources` deprecation warning. `setuptools<81` is pinned for compatibility with this project. The warning does not indicate a failed test or application crash.
+
+Team 
+Davinder Singh
+Shikhil Paul
+Minaz 
